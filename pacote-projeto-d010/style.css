@@ -5,7 +5,7 @@
 
 * {
     margin: 0px;
-    }
+}
 
 body {
     font-family: Arial, Helvetica, sans-serif;
@@ -15,28 +15,24 @@ body {
 
 /* Primeira etapa */
 header {
-    background-image: linear-gradient(to bottom, #2C7A69, #5BFAD7);
+    background-image: linear-gradient(to top, #2C7A69, #5BFAD7);
     padding: 1px 0px 10px 0px;
     margin: auto;
     height: 150px;
     color: #381ba3b2;
+    box-shadow: 4px 3px 11px 0px rgb(0 0 0 / 44%);
 }
 
-#principal {
+#principal, #primeiro {
     text-align: center;
     padding: 10px;
-    margin: 15px auto 0px auto;
-}
-
-#primeiro {
-    text-align: center;
-    padding: 2px;
     margin: 5px auto;
 }
 
+
 #menu {
     text-align: right;
-    margin: 20px 20px 5px 0px;
+    margin: 15px 20px 10px 0px;
     padding: 2px;
 }
 
@@ -54,7 +50,40 @@ nav > a:hover {
 
 /* Segunda etapa */
 main {
-    background-color: white;
+    background-color: #5BFAD7;
+    margin: 2px auto;
+}
 
+article {
+    background-color: white;
+    margin: auto 160px;
+    padding: 20px;
+    text-align: justify;
+    box-shadow: 4px 3px 11px 0px rgb(0 0 0 / 44%);
+}
+
+.titulos {
+    font-family: android;
+    color: #2C7A69;
+    margin: 10px;
+    padding: 5px;
+    font-size: 1.5em;
+    background-image: linear-gradient(to right, #99f8e341, #b2f8e91a);
+}
+
+#meio-principal {
+    font-size: 2em;
+    font-family: android;
+    color: #2C7A69;
+    margin: 10px;
+    padding: 5px;
+}
+
+div > p {
+    text-align: justify;
+    text-indent: 30px;
+    padding: 10px;
+    margin: 10px;
+    text-size-adjust: 10px;
 }
 
