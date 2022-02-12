@@ -4,69 +4,96 @@
 }
 
 * {
+    font-size: 100%;
     margin: 0px;
+    padding: 0px;
 }
 
 body {
     font-family: Arial, Helvetica, sans-serif;
     font-size: 1em;
     background-color: #5BFAD7;
+    line-height: 30px;
+    text-indent: 30px;
 }
 
 /* Primeira etapa */
 header {
-    background-image: linear-gradient(to top, #2C7A69, #5BFAD7);
-    padding: 1px 0px 10px 0px;
+    background-image: linear-gradient(to top, #163b33, #26b496ab);
+    min-height: 200px;
+    width: 100%;
     margin: auto;
-    height: 150px;
     color: #381ba3b2;
-    box-shadow: 4px 3px 11px 0px rgb(0 0 0 / 44%);
+    box-shadow: 4px 4px 6px rgb(0 0 0 / 44%);
 }
 
-#principal, #primeiro {
+#principal{
     text-align: center;
-    padding: 10px;
-    margin: 5px auto;
+    font-size: 2.1em;
+    margin: auto;
+    padding: 50px 10px 20px 10px;
+}
+
+#primeiro {
+    text-align: center;
+    font-size: 1.3em;
+    font-style: oblique;
+    margin: auto;
+    padding: 10px 10px 30px 10px;
 }
 
 
 #menu {
     text-align: right;
-    margin: 15px 20px 10px 0px;
-    padding: 2px;
+    margin: auto;
+    padding: 5px 15px;
 }
 
 .menu {
     text-decoration: none;
     color: #381ba3b2;
     font-weight: bolder;
-    padding: 5px;
+    margin: auto;
+    margin: auto 10px;
+    padding: 2px;
 }
 
 nav > a:hover {
     color: gray;
-    text-decoration: underline;
+    background-color: #5BFAD7;
+    border-radius: 5px;
+    margin: 0px;
+    padding: 8px;
+}
+
+a:visited {
+    color: rgb(0, 0, 0);
+}
+
+a:active {
+    background-color: yellow;
 }
 
 /* Segunda etapa */
 main {
     background-color: #5BFAD7;
-    margin: 2px auto;
+    margin: auto;
 }
 
 article {
     background-color: white;
-    margin: auto 160px;
-    padding: 20px;
+    max-width: 1000px;
+    min-width: none;
+    margin: auto;
     text-align: justify;
     box-shadow: 4px 3px 11px 0px rgb(0 0 0 / 44%);
 }
 
+/* passo 3 */
 .titulos {
     font-family: android;
     color: #2C7A69;
     margin: 10px;
-    padding: 5px;
     font-size: 1.5em;
     background-image: linear-gradient(to right, #99f8e341, #b2f8e91a);
 }
@@ -75,15 +102,64 @@ article {
     font-size: 2em;
     font-family: android;
     color: #2C7A69;
-    margin: 10px;
-    padding: 5px;
+    margin: 2px auto;
+    padding: 40px 10px 10px 10px;
 }
 
 div > p {
     text-align: justify;
-    text-indent: 30px;
     padding: 10px;
-    margin: 10px;
-    text-size-adjust: 10px;
+    font-size: 1em;
 }
+
+strong {
+    color: #000000b9;
+}
+
+p > a {
+    text-decoration: none;
+    background-color: #00b7ffe0;
+    color: rgba(5, 255, 38, 0.911);
+    padding: 3px;
+    border-radius: 3px;
+}
+
+p > a:hover {
+    text-decoration: underline;
+}
+
+p > a::after {
+    content: ' ❖';
+    color: rgb(30, 114, 210);
+}
+
+/* passo 4 */
+img {
+    width: 96%;
+    display: block;
+    margin: auto;
+}
+
+#bug {
+    width: 400px;
+    display: block;
+    margin: auto;
+}
+
+/*  passo 5 */
+article > #video-youtube {
+    background-color: #163b33;
+    width: 100%;
+    margin: auto;
+}
+
+iframe {
+    display: block;
+    width: 900px;
+    height: 600px;
+    margin: auto;
+    padding: 20px;
+}
+
+/* passo 6 */
 
