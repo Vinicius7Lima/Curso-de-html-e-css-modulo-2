@@ -1,9 +1,29 @@
+@charset "UTF-8";
+
 @font-face {
     font-family: android;
-    src: url(fontes/idroid.otf), format(opentype);
+    src: url(fontes/idroid.otf);
 }
 
-@import url('https://fonts.googleapis.com/css2? family= Orbitron:wght@500 & display=swap');
+@font-face {
+    font-family: square;
+    src: url(fontes/Square.ttf);
+}
+
+:root {
+    --verde1: #5BFAD7;
+    --verde2: #26b496ab;
+    --verde3: #163b33;
+    --v-claro1: #99f8e341;
+    --v-claro2: #b2f8e91a;
+    --sombra: rgb(0 0 0 / 44%);
+    --cinza: #000000b9;
+    --roxo: #381ba3b2;
+
+    --fonte-normal: Arial, Helvetica, sans-serif;
+    --fonte-android: android, Verdana;
+    --fonte-esquilo: square, sans-serif;
+}
 
 * {
     font-size: 100%;
@@ -12,24 +32,24 @@
 }
 
 body {
-    font-family: Arial, Helvetica, sans-serif;
+    font-family: --fonte-normal;
     font-size: 1em;
-    background-color: #5BFAD7;
+    background-color: var(--verde1);
     line-height: 30px;
 }
 
 /* Primeira etapa */
 header {
-    background-image: linear-gradient(to top, #163b33, #26b496ab);
+    background-image: linear-gradient(to top, var(--verde3), var(--verde2));
     min-height: 200px;
     width: auto;
     margin: auto;
-    color: #381ba3b2;
-    box-shadow: 4px 4px 6px rgb(0 0 0 / 44%);
+    color: var(--roxo);
+    box-shadow: 2px 2px 6px var(--sombra);
 }
 
 #principal{
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--fonte-esquilo);
     text-align: center;
     font-size: 2.5em;
     margin: auto;
@@ -37,7 +57,7 @@ header {
 }
 
 #primeiro {
-    font-family: 'Orbitron', sans-serif;
+    font-family: var(--fonte-esquilo);
     text-align: center;
     font-size: 1.3em;
     font-style: oblique;
@@ -54,31 +74,22 @@ header {
 
 .menu {
     text-decoration: none;
-    color: #381ba3b2;
+    color: var(--cinza);
     font-weight: bolder;
     margin: auto 10px;
     padding: 2px;
 }
 
 nav > a:hover {
-    color: gray;
-    background-color: #5BFAD7;
+    color: var(--roxo);
+    background-color: var(--verde1);
     border-radius: 5px;
     margin: 0px;
     padding: 8px;
 }
 
-a:visited {
-    color: rgb(0, 0, 0);
-}
-
-a:active {
-    background-color: yellow;
-}
-
 /* Segunda etapa */
 main {
-    background-color: #5BFAD7;
     margin: auto;
 }
 
@@ -89,13 +100,13 @@ article {
     margin: auto;
     text-align: justify;
     border-radius: 0px 0px 10px 10px;
-    box-shadow: 4px 3px 11px 0px rgb(0 0 0 / 44%);
+    box-shadow: 1px 1px 10px var(--sombra);
 }
 
 /* passo 3 */
 .titulos {
-    font-family: android;
-    color: #2C7A69;
+    font-family: var(--fonte-android);
+    color: var(--verde3);
     margin: 10px;
     font-size: 1.5em;
     padding-left: 30px;
@@ -105,7 +116,7 @@ article {
 #meio-principal {
     font-size: 2em;
     font-family: android;
-    color: #2C7A69;
+    color: var(--verde3);
     margin: 2px auto;
     padding: 40px 20px 10px 40px;
 }
@@ -118,27 +129,29 @@ div > p {
 }
 
 strong {
-    color: #000000b9;
+    color: var(--cinza);
 }
 
 p > a {
     text-decoration: none;
-    color: rgb(14, 66, 21);
+    color: var(--verde3);
     padding: 3px;
+    font-weight: bold;
 }
 
 p > .links {
-    background-color: #32a3cf52;
+    background-color: var(--verde2);
     border-radius: 1px;
 }
 
 p > a:hover {
     text-decoration: underline;
+    color: var(--roxo);
 }
 
-p > a::after {
+p > .links::after {
     content: ' ❖';
-    color: rgb(30, 114, 210);
+    font-weight: normal;
 }
 
 /* passo 4 */
@@ -156,7 +169,7 @@ img {
 
 /*  passo 5 */
 article > #video-youtube {
-    background-color: #163b33;
+    background-color: var(--verde3);
     max-width: 100%;
     min-width: 400px;
     height: auto;
@@ -179,8 +192,8 @@ iframe {
     margin: auto;
     margin-top: 30px;
     padding: 20px;
-    background-color: #5BFAD7;
-    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+    background-color: var(--verde1);
+    box-shadow: 3px 3px 5px var(--sombra);
 }
 
 aside {
@@ -188,8 +201,11 @@ aside {
     height: 150px;
     line-height: 20px;
     padding: 20px;
-    color: #163b33;
+    color: var(--verde3);
     font-weight: bold;
+}
+abbr {
+    text-decoration: none;
 }
 
 li::before {
@@ -206,11 +222,12 @@ li::before {
 /* Passo 7 */
 #mais-infor {
     display: block;
-    background-color: #2cd1ad77;
+    background-color: var(--verde2);
+    font-size: 1.2em;
     margin: -20px -20px 0px -20px;
     padding: 20px;
     border-radius: 10px 10px 0px 0px;
-    color: #163b33;
+    color: var(--verde3);
 }
 
 .outra-format {
@@ -221,13 +238,9 @@ li::before {
     text-indent: 20px;
 }
 
-#android {
-    background-color: #62c9b2;
-    color: #021d17f3;
-}
 
 footer {
-    background-color: #163b33;
+    background-color: var(--verde3);
     margin: auto;
     margin-top: 50px;
 }
@@ -238,4 +251,12 @@ footer {
     font-weight: 400;
     margin: auto;
     padding: 5px;
+}
+
+#roda > a {
+    color: var(--verde2);
+}
+
+#roda > a:hover {
+    color: var(--cinza);
 }
