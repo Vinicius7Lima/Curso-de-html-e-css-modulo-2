@@ -14,7 +14,6 @@ body {
     font-size: 1em;
     background-color: #5BFAD7;
     line-height: 30px;
-    text-indent: 30px;
 }
 
 /* Primeira etapa */
@@ -86,6 +85,7 @@ article {
     min-width: none;
     margin: auto;
     text-align: justify;
+    border-radius: 0px 0px 10px 10px;
     box-shadow: 4px 3px 11px 0px rgb(0 0 0 / 44%);
 }
 
@@ -95,6 +95,7 @@ article {
     color: #2C7A69;
     margin: 10px;
     font-size: 1.5em;
+    padding-left: 30px;
     background-image: linear-gradient(to right, #99f8e341, #b2f8e91a);
 }
 
@@ -103,13 +104,14 @@ article {
     font-family: android;
     color: #2C7A69;
     margin: 2px auto;
-    padding: 40px 10px 10px 10px;
+    padding: 40px 20px 10px 40px;
 }
 
 div > p {
     text-align: justify;
-    padding: 10px;
+    padding: 20px;
     font-size: 1em;
+    text-indent: 20px;
 }
 
 strong {
@@ -150,16 +152,83 @@ img {
 article > #video-youtube {
     background-color: #163b33;
     width: 100%;
-    margin: auto;
 }
 
 iframe {
     display: block;
     width: 900px;
-    height: 600px;
+    height: 550px;
     margin: auto;
     padding: 20px;
 }
 
 /* passo 6 */
 
+#topicos {
+    width: 920px;
+    height: 470px;
+    border-radius: 10px;
+    margin: auto;
+    margin-top: 30px;
+    padding: 20px;
+    background-color: #5BFAD7;
+    box-shadow: 3px 3px 5px rgba(0, 0, 0, 0.356);
+}
+
+aside {
+    width: auto;
+    height: 150px;
+    line-height: 20px;
+    padding: 20px;
+    color: #163b33;
+    font-weight: bold;
+}
+
+li::before {
+    content: '✓ ';
+}
+
+#pri-list {
+    float: left;
+}
+#sec-list {
+    float: right;
+}
+
+/* Passo 7 */
+#mais-infor {
+    display: block;
+    background-color: #2cd1ad77;
+    margin: -20px -20px 0px -20px;
+    padding: 20px;
+    border-radius: 10px 10px 0px 0px;
+    color: #163b33;
+}
+
+.outra-format {
+    margin: auto;
+    text-align: justify;
+    padding: 10px;
+    font-size: 1em;
+    text-indent: 20px;
+}
+
+#android {
+    background-color: #62c9b2;
+    color: #021d17f3;
+    font-weight: bold;
+}
+
+footer {
+    background-color: #163b33;
+    margin: auto;
+    margin-top: 50px;
+}
+
+#roda {
+    text-align: center;
+    color: white;
+    font-weight: 400;
+    margin: auto;
+    padding: 5px;
+}
