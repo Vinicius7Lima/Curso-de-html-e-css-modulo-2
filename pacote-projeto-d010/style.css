@@ -3,6 +3,8 @@
     src: url(fontes/idroid.otf), format(opentype);
 }
 
+@import url('https://fonts.googleapis.com/css2? family= Orbitron:wght@500 & display=swap');
+
 * {
     font-size: 100%;
     margin: 0px;
@@ -20,20 +22,22 @@ body {
 header {
     background-image: linear-gradient(to top, #163b33, #26b496ab);
     min-height: 200px;
-    width: 100%;
+    width: auto;
     margin: auto;
     color: #381ba3b2;
     box-shadow: 4px 4px 6px rgb(0 0 0 / 44%);
 }
 
 #principal{
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
-    font-size: 2.1em;
+    font-size: 2.5em;
     margin: auto;
     padding: 50px 10px 20px 10px;
 }
 
 #primeiro {
+    font-family: 'Orbitron', sans-serif;
     text-align: center;
     font-size: 1.3em;
     font-style: oblique;
@@ -52,7 +56,6 @@ header {
     text-decoration: none;
     color: #381ba3b2;
     font-weight: bolder;
-    margin: auto;
     margin: auto 10px;
     padding: 2px;
 }
@@ -82,7 +85,7 @@ main {
 article {
     background-color: white;
     max-width: 1000px;
-    min-width: none;
+    min-width: 200px;
     margin: auto;
     text-align: justify;
     border-radius: 0px 0px 10px 10px;
@@ -120,10 +123,13 @@ strong {
 
 p > a {
     text-decoration: none;
-    background-color: #00b7ffe0;
-    color: rgba(5, 255, 38, 0.911);
+    color: rgb(14, 66, 21);
     padding: 3px;
-    border-radius: 3px;
+}
+
+p > .links {
+    background-color: #32a3cf52;
+    border-radius: 1px;
 }
 
 p > a:hover {
@@ -151,13 +157,15 @@ img {
 /*  passo 5 */
 article > #video-youtube {
     background-color: #163b33;
-    width: 100%;
+    max-width: 100%;
+    min-width: 400px;
+    height: auto;
 }
 
 iframe {
     display: block;
-    width: 900px;
-    height: 550px;
+    width: 80%;
+    height: 400px;
     margin: auto;
     padding: 20px;
 }
@@ -165,8 +173,8 @@ iframe {
 /* passo 6 */
 
 #topicos {
-    width: 920px;
-    height: 470px;
+    width: 90%;
+    height: auto;
     border-radius: 10px;
     margin: auto;
     margin-top: 30px;
@@ -216,7 +224,6 @@ li::before {
 #android {
     background-color: #62c9b2;
     color: #021d17f3;
-    font-weight: bold;
 }
 
 footer {
