@@ -1,0 +1,91 @@
+@charset "UTF-8";
+
+@font-face {
+    font-family: android;
+    src: url(fontes/idroid.otf);
+}
+
+@font-face {
+    font-family: esquilo;
+    src: url(fontes/Square.ttf);
+}
+
+@import url('https://fonts.googleapis.com/css2? family= Noto+Serif+Display:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900 & display=swap');
+
+:root {
+    --cor1: #598D99;
+    --verde: #A2E66E;
+    --azul: #0DC0E6;
+    --marom_d: #99743A;
+    --marom_c: #E6B363;
+    --sombra: #0000004b;
+    --fonte1: 'Noto Serif Display';
+    --fonte-android: andoid;
+    --fonte-esquilo: esquilo;
+}
+
+* {
+    margin: 0px;
+    padding: 0px;
+}
+
+body {
+    font-family: var(--fonte1);
+    font-size: 100%;
+    margin: auto;
+    background-color: var(--azul);
+    line-height: 30px;
+}
+
+/* Configuações do header */
+header {
+    background-image: linear-gradient(to bottom, var(--verde), var(--cor1));
+    font-family: var(--fonte-android);
+    text-align: center;
+    height: 150px;
+    margin: auto;
+    padding: 10px;
+}
+
+header > h1 {
+    font-size: 2.5em;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+header > h2 {
+    font-size: 1.5em;
+    margin: 10px auto;
+    padding: 10px;
+}
+
+
+/* Configurações do menu */
+nav {
+    background-color: var(--marom_c);
+    box-shadow: 0px 0px 10px var(--sombra);
+    margin: auto;
+    padding: 5px;
+    text-align: right;
+    font-family: var(--fonte-android);
+}
+
+
+/* configurações do main */
+
+main {
+    width: 1000px;
+    background-color: white;
+    margin: 0px auto;
+    box-shadow: 0px 0px 20px var(--sombra);
+    border-radius: 0px 0px 5px 5px;
+}
+
+/* Configurações do rodapé */
+footer {
+    background-color: var(--marom_d);
+    margin: auto;
+    margin-top: 30px;
+    padding: 5px;
+    text-align: center;
+}
