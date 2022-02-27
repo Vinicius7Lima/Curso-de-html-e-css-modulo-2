@@ -39,9 +39,11 @@ body {
 
 /* Configuações do header */
 header {
+    color: white;
     background-image: linear-gradient(to bottom, var(--verde), var(--cor1));
     font-family: var(--fonte-android);
     text-align: center;
+    text-shadow: 1px 0px 10px var(--sombra);
     height: 150px;
     margin: auto;
     padding: 10px;
@@ -50,13 +52,13 @@ header {
 header > h1 {
     font-size: 2.5em;
     margin: 10px auto;
-    padding: 10px;
+    padding: 5px;
 }
 
 header > h2 {
     font-size: 1.5em;
-    margin: 10px auto;
-    padding: 10px;
+    margin: 15px auto;
+    padding: 5px;
 }
 
 
@@ -70,15 +72,168 @@ nav {
     font-family: var(--fonte-android);
 }
 
+nav > a {
+    color: var(--marom_c);
+    background-color: var(--marom_d);
+    margin: auto;
+    margin-right: 10px;
+    padding: 5px 10px;
+    border-radius: 5px;
+    text-decoration: none;
+    font-weight: bold;
+}
+
+nav > a:hover {
+    color: var(--cor1);
+    background-color: var(--verde);
+    text-decoration: underline;
+}
+
 
 /* configurações do main */
 
 main {
-    width: 1000px;
+    max-width: 1000px;
+    min-width: 270px;
     background-color: white;
     margin: 0px auto;
     box-shadow: 0px 0px 20px var(--sombra);
     border-radius: 0px 0px 5px 5px;
+    text-align: justify;
+}
+
+/* Configurações do artigo */
+article {
+    margin: auto;
+    padding: 20px;
+}
+
+article > h1 {
+    text-align: center;
+    text-shadow: 1px 0px 10px var(--sombra);
+    background-color: var(--cor1);
+    color: white;
+    font-family: var(--fonte-esquilo);
+    font-size: 1.7em;
+    margin: 0px -20px;
+    padding: 5px;
+}
+
+.titulos-artigo {
+    color: white;
+    text-shadow: 1px 0px 10px var(--sombra);
+    font-family: var(--fonte-android);
+    margin: 5px -20px;
+    padding-left: 20px;
+    background-image: linear-gradient(to right, var(--cor1), transparent);
+}
+
+article strong {
+    color: var(--marom_c);
+}
+
+.externos {
+    text-decoration: none;
+    color: var(--cor1);
+    font-weight: bold;
+}
+
+.externos:hover {
+    text-decoration: underline;
+    padding: 1px;
+    color: purple;
+}
+
+article a:hover {
+    background-color: var(--cor1);
+    border-radius: 1px;
+}
+
+article a::after {
+    content: ' 🔗';
+}
+
+article > p {
+    text-indent: 20px;
+}
+
+.fotos {
+    width: 100%;
+    margin: auto;
+}
+
+#logo-bugdroid {
+    display: block;
+    width: 450px;
+    margin: auto;
+}
+
+.videos-youtube {
+    background-color: var(--marom_d);
+    margin-left: -20px;
+    margin-right: -20px;
+    box-shadow: 0px 0px 10px var(--sombra);
+}
+
+iframe {
+    display: block;
+    width: 90%;
+    height: 400px;
+    margin: auto;
+    padding: 20px 0px;
+}
+
+/* configurações do aside */
+
+aside {
+    background-color: var(--azul);
+    text-align: justify;
+    width: 94%;
+    margin: 15px auto;
+    padding: 10px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 10px var(--sombra);
+}
+
+aside > h3 {
+    background-color: var(--cor1);
+    margin: 0px -10px;
+    margin-top: -20px;
+    padding: 5px 5px 5px 15px;
+    border-radius: 10px 10px 0px 0px;
+}
+
+aside > p {
+    text-indent: 15px;
+    padding: 5px;
+}
+
+aside strong {
+    color: var(--marom_d);
+}
+
+aside a::before {
+    content: ' 🔗 ';
+}
+
+aside ul {
+    text-align: justify;
+    list-style-type: '✔️ ';
+    list-style-position: inside;
+    columns: 2;
+    width: 100%;
+    margin-left: 50px;
+    font-weight: bold;
+}
+
+li abbr {
+    text-decoration: none;
+}
+
+main > p {
+    text-align: justify;
+    margin: 5px;
+    padding: 10px;
 }
 
 /* Configurações do rodapé */
@@ -88,4 +243,15 @@ footer {
     margin-top: 30px;
     padding: 5px;
     text-align: center;
+}
+
+.link {
+    color: var(--verde);
+    text-decoration: none;
+    font-weight: bold;
+}
+
+.link:hover {
+    color: var(--marom_c);
+    text-decoration: underline;
 }
